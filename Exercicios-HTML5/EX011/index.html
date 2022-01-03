@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essa página em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador</p>
+    <picture><!--Nessa tag, devemos usar de forma crescente, justamente como está disposto abaixo. IMPORTANTE OBEDECER A ORDEM, POIS PODE ACABAR NÃO FUNCIONANDO.-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagemG">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/musica-rap.mp3" controls autoplay></audio> <!--Os formatos de áudios mais compativeis são MP3, WAV e OGG-->
+    <p>Outra situação de reprodução de áudio</p>
+    <audio controls >
+        <source src="midia/musica-rap.mp3" type="audio/mpeg">
+        <source src="midia/musica-rap.ogg" type="audio/ogg">
+        <source src="midia/musica-rap.wav" type="audio/wav"><!--Evitar usar formato "WAV" pois tende a ser muito pesado.-->
+        <p>Infelizmente seu navegador não reproduz áudio, <a href="midia/musica-rap.mp3" download="musica-rap.mp3" >clique aqui</a> e faça download arquivo MP3</p><!--Nesta segunda forma de reprodução a tag "source:src" tentará reproduzir o áudio de forma sequêncial, ou seja, do primeiro para o ultimo. Caso ele não consigo reproduzir em nenhum dos formatos ele irá partir para a tag "p" que indicará o donwload. -->
+    </audio>
+
+    
+</body>
+</html>
