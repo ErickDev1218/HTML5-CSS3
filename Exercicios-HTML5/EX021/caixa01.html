@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{ /* box-level */
+            background-color: lightblue;
+            width: 350px;
+            height: 350px;
+
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            /*fast-hand segue justamente esta sequencia. ex: border: 3px solid black*/
+
+            padding: 5px 5px 5px 5px; /*fast-hand em sentido horário. E caso todos os valores forem iguais, basta colocar uma ÚNICA vez. Ex: padding: 10px. Caso seja disposto dois valores como '10px 20px' no fast-hand, será tomado como valor top/bottom e right/left respectivamente*/
+            /*Em fast-hand, posso utilizar também '10px auto' para que, independente do tamanho da tela, seja sempre centralizado*/
+            
+            margin: 10px 10px 10px 10px; /*fast-hand em sentido horário. E caso todos os valores forem iguais, basta colocar uma ÚNICA vez. Ex: margin: 10px. Caso seja disposto dois valores como '10px 20px' no fast-hand, será tomado como valor top/bottom e right/left*/
+            /*Em fast-hand, posso utilizar também '10px auto' para que, independente do tamanho da tela, seja sempre centralizado*/
+
+            outline-width: 5px;
+            outline-style: solid;
+            outline-color: darkred;
+            /*As outlines ficam DENTRO da margin SEMPRE*/
+            /*fast-hand segue a ordem disposta. Ex: outline: 10px solid darkred*/
+        }
+
+        a{/* inline-level */
+            border-style: solid;
+            border-color: orangered;
+            border-width: 2px;
+            padding: 1px 1px 1px 1px;
+            margin: 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de modelo de caixas box-level</h1>
+    <p>Paragrafos também são modelos de caixas, já os <a href="#">links</a> não são, estes são inline-box</p>
+</body>
+</html>
