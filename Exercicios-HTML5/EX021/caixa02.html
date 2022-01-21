@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(144, 238, 144, 0.63);
+        }
+        header > h1{
+            text-align: center;
+            padding: 10px;
+            background-color: darkgreen;
+            color: white;
+            margin: auto;
+            margin: 10px 70px
+            
+            
+        }
+
+        nav{
+            background-color: rgba(0, 128, 0, 0.568);
+            text-align: center;
+            margin: 20px;
+            padding: 5px;
+        }
+        nav > a{
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav > a:hover{
+            background-color: darkgreen;
+            text-decoration: underline;
+        }
+
+        article > h2{
+            text-decoration: underline;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        article > p{
+            text-align: justify;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        aside > p {
+            text-align: right;
+            margin: 25px;
+        }
+
+        aside > p > a {
+            text-decoration: none;
+
+        }
+        aside > p > a:hover{
+            background-color: darkgreen;
+            text-decoration: underline;
+         }
+
+         footer > p{
+             background-color: black;
+             margin: 10px 20px;
+             text-align: center;
+             padding: 10px;
+             color: white;
+         }
+
+         footer > p > a{
+            text-decoration: none;
+         }
+         footer > p > a:hover{
+             text-decoration: underline;
+             color: red;
+         }
+        
+
+    </style>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <h1>Medicina veterinária</h1>
+        <!--Tag NAV de NAVegação--><nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a></nav>
+    </header>
+    
+    <main> <!--Principal-->
+        <section> <!--Seção-->
+            <article> <!--Artigo-->
+                <h2>Noticias sobre medicina veterinária</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident magni nihil ipsam voluptatibus voluptate iure molestiae quae iste dolores in placeat explicabo blanditiis, voluptatem harum, ex expedita tenetur facilis! Adipisci?</p>
+            </article>
+            <aside> <!--Conteúdo periferico, relativo ao artigo-->
+                <p>Artigo retirado  <a href="#">do site</a></p>
+            </aside>
+        </section>
+    </main>
+    
+    <footer><!--Rodapé-->
+        <p>Desenvolvido por <a href="https://github.com/ErickDev1218" target="_blank">ErickDEV1218</a></p>
+    </footer>
+</body>
+</html>
